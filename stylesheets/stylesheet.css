@@ -450,8 +450,7 @@ h1.title {
   margin: 30px 20px 10px;
   font-size: 60px;
   font-weight: bold;
-  font-style: italic;
-  font-family:Georgia, serif;
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   text-align: center;
 }
 
@@ -470,6 +469,7 @@ p.tagline {
   padding: 20px 20px 0;
   color: #fff;
   font-size: 17px;
+  text-align: center;
 }
 
 #main {
@@ -555,7 +555,7 @@ p.tagline {
   margin-top: 8px;
   display: block;
   float: left;
-  text-indent: 0;
+  text-indent: 5px;
   width: auto;
   height: auto;
   opacity: 1;
@@ -701,17 +701,17 @@ footer .creds small {
 }
 
 footer .owner .avatar {
-  background-color: #666;
+  background-color: #02243e;
   display: block;
-  margin: -19px 10px 0 0;
+  margin: -14px 10px 0 0;
   width: 60px;
   float: left;
+  border: 1px solid #585858;
 }
 
 footer .owner img {
   display: block;
-  border: 1px solid #2a2a2a;
-  margin: 5px;
+  margin: auto;
 }
 
 footer .owner p {
