@@ -46,11 +46,12 @@
 
                     <p>Compatibilty: Linux, Docker, VM</p>
 
-                    <p>DES</p>
+                    <p>Atlas by Hashicorp is a tool that facilitates a single workflow from development to production. Atlas unifies Hashicorp's other tools: Vagrant, Packer, Terraform and Consul into a single platform. Vagrant provides reproducible virtual development environments, Packer facilitates immutable golden image deploys, Terraform configures and deploys Packer images into production, and Consul enables service discovery.</p>
 
                     <p><strong>Resources</strong></p>
                     <ul>
                         <li><a href="http://techcrunch.com/2014/12/09/hashicorp-announces-new-devops-management-tool-and-10m-in-funding/">HashiCorp Announces New DevOps Management Tool And $10M In Funding</a></li>
+                        <li><a href="https://github.com/hashicorp/atlas-examples">Atlas Examples</a></li>
                     </ul>
 
                     <h2><a id="coreos" class="anchor" href="#coreos" aria-hidden="true"></a>CoreOS</h2>
@@ -59,7 +60,7 @@
 
                     <p>Compatibility: Linux, Docker, Rocket</p>
 
-                    <p>CoreOS</p>
+                    <p>Core OS is a minimal Linux distro that provides infrastructure primitives focused on deploying and running Docker services in production. It's 2 core primitives are etcd and fleet. etcd is a distributed key-value store that facilitates service discovery and configuration. fleet abstracts distributed Docker deployments by accepting service configuration files that will be queued for execution into a CoreOS cluster.</p>
 
                     <p><strong>Resources</strong></p>
                     <ul>
@@ -73,7 +74,7 @@
 
                     <p>Compatibility: Linux, Docker</p>
 
-                    <p>Docker</p>
+                    <p>Docker is the new standard for portable Linux services and applications. It relies on core Linux kernel container primitives, and abstracts them into a user friendly API. It allows you to create an isolated container of your service, which acts like a lightweight virtual machine that shares the same kernel as the host operating system. This container can be turned into an image, and shared with anybody running Linux. The Docker company also provides orchestration tools on top of Docker such as Machine, Compose and Swarm.</p>
 
                     <p><strong>Resources</strong></p>
                     <ul>
@@ -86,11 +87,12 @@
 
                     <p>Compatibilty: Linux, Docker</p>
 
-                    <p>DES</p>
+                    <p>Flynn is a multi-host open source PAAS built around Docker. Flynn is built in 2 layers: Layer 0 is a low level scheduling and service discovery framework, Layer 1 is a set of higher level components that make it easier to deploy and maintain both stateful services and 12 factor applications.</p>
 
                     <p><strong>Resources</strong></p>
                     <ul>
                         <li><a href="http://www.centurylinklabs.com/flynn-vs-deis-the-tale-of-two-docker-micro-paas-technologies/">Flynn vs. Deis: The Tale of Two Docker Micro-PaaS Technologies</a></li>
+                        <li><a href="http://progrium.com/blog/2014/02/06/the-start-of-the-age-of-flynn/">The Start of the Age of Flynn</a></li>
                     </ul>
 
                     <h2><a id="hybridcluster" class="anchor" href="#hybridcluster" aria-hidden="true"></a>HybridCluster</h2>
@@ -99,7 +101,7 @@
 
                     <p>Compatibility: FreeBSD, Jails</p>
 
-                    <p>HybridCluster</p>
+                    <p>HybridCluster is an cloud infrastructure stack focused on hosting large scale web applications with built in high availability, auto scaling and ZFS storage. It currently supports running unmodified LAMP applications. HybridCluster is built up of AwesomeProxy, Flex Containers, ZFS and Control & Management tools that facilitates heartbeats and replication across HybridCluster machines.</p>
 
                     <p><strong>Resources</strong></p>
                     <ul>
@@ -112,7 +114,7 @@
 
                     <p>Compatibility: Linux, Docker</p>
 
-                    <p>DES</p>
+                    <p>Kubernetes is both a configuration and scheduling tool for Docker services. It provides you a way to configure Docker containers into clusters of interacting services, and then it will intelligently schedule this configuration into a cluster of machines, taking into account resource density, replication and service grouping. It can run on Google Container Engine, or be installed on existing Linux distros.</p>
 
                     <p><strong>Resources</strong></p>
                     <ul>
@@ -153,12 +155,26 @@
 
                     <p>Compatibility: Xen, OCaml</p>
 
-                    <p>DES</p>
+                    <p>Mirage OS is a library operating system that allows you to construct networked services as UniKernels that can run on the Xen hypervisor. A UniKernel operates similarly to a Docker container, except that it is more secure, and does not require a host OS, because it already has its own kernel.</p>
 
                     <p><strong>Resources</strong></p>
                     <ul>
                         <li><a href="http://blog.acolyer.org/2015/01/13/unikernels-library-operating-systems-for-the-cloud/">Unikernels: Library Operating Systems for the Cloud</a></li>
                         <li><a href="http://www.linux.com/news/enterprise/cloud-computing/751156-are-cloud-operating-systems-the-next-big-thing-">Are Cloud Operating Systems the Next Big Thing? </a></li>
+                        <li><a href="http://queue.acm.org/detail.cfm?id=2566628">Unikernels: Rise of the Virtual Library Operating System</a></li>
+                    </ul>
+
+                    <h2><a id="nixos" class="anchor" href="#nixos" aria-hidden="true"></a>NixOS</h2>
+
+                    <p><a href="http://nixos.org/">http://nixos.org/</a></p>
+
+                    <p>Compatibility: Linux</p>
+
+                    <p>NixOS is a purely functional Linux distro. It provides a declarative pure functional way of specifying operating system state, which allows you to atomically specify changes to the operating system. The configuration language called Nix replaces configuration management tools such as Puppet, Chef, Ansible and CFEngine. Distributed management of NixOS clusters can be done through NixOps or Disnix.</p>
+
+                    <p><strong>Resources</strong></p>
+                    <ul>
+                        <li><a href="https://www.domenkozar.com/2014/03/11/why-puppet-chef-ansible-arent-good-enough-and-we-can-do-better/">Why Puppet/Chef/Ansible aren't good enough (and we can do better)</a></li>
                     </ul>
 
                     <h2><a id="project-atomic" class="anchor" href="#project-atomic" aria-hidden="true"></a>Project Atomic</h2>
@@ -167,7 +183,7 @@
 
                     <p>Compatibility: Linux, Docker</p>
 
-                    <p>DES</p>
+                    <p>Project Atomic is a set of tools that is focused on running Docker services on Redhat distros (Fedora, CentOS, RHEL). It's advantages include atomic updates and secure containers using SELinux.</p>
 
                     <p><strong>Resources</strong></p>
                     <ul>
@@ -180,7 +196,7 @@
 
                     <p>Compatibilty: Linux, Docker</p>
 
-                    <p>DES</p>
+                    <p>RancherOS is probably best compared to CoreOS, the main difference is that it uses Docker to run everything except the kernel.</p>
 
                     <p><strong>Resources</strong></p>
                     <ul>
@@ -196,7 +212,7 @@
 
                     <p>Compatibilty: Open Solaris, KVM, Zones</p>
 
-                    <p>DES</p>
+                    <p>SmartOS is a OpenSolaris based hypervisor suitable for building high scalable cloud platforms. It combines ZFS, DTrace, Zones and KVM. Zones is the OpenSolaris analogue of Docker containers.</p>
 
                     <p><strong>Resources</strong></p>
                     <ul>
